@@ -11,7 +11,7 @@ public class Jwks {
     private Jwks() {}
     public static RSAKey generateRsa() {
         KeyPair keyPair = KeyGeneratorUtils.generateRsaKey();
-        RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic()
+        RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
         RSAPrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();
         return new RSAKey.Builder(publicKey)
                 .privateKey(privateKey)
