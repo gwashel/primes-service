@@ -1,20 +1,20 @@
 package com.primes_service.primesservice.controller;
 
 
-import com.primes_service.primesservice.service.PrimeService;
+import com.primes_service.primesservice.service.PrimesService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
 @RequestMapping("/primes")
 public class PrimesController {
-    PrimeService primeService = new PrimeService();
+    PrimesService primesService = new PrimesService();
 
-    public PrimesController(PrimeService primeService) {
-        this.primeService = primeService;
+    public PrimesController(PrimesService primeService) {
+        this.primesService = primeService;
     }
     @GetMapping("/{n}")
     public boolean isPrime(@PathVariable int n) {
-        return primeService.isPrime(n);
+        return primesService.isPrime(n);
     }
 }
