@@ -1,5 +1,18 @@
 package com.primes_service.primesservice.repositories;
 
+import com.primes_service.primesservice.model.Customer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.List;
+
 public class AuthenticationFileRepository implements IAuthenticationRepository {
 
     private static final Logger LOG = LoggerFactory.getLogger(AuthenticationFileRepository.class);
