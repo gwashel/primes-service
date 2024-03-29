@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrimeServiceTest {
-    PrimeService primeService = new PrimeService();
+    PrimesService primeService = new PrimesService();
 
 
     @Test
