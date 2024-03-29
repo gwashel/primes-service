@@ -3,6 +3,7 @@ package com.primes_service.primesservice.repositories;
 import com.primes_service.primesservice.model.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +14,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
+
+@Repository
 public class AuthenticationFileRepository implements IAuthenticationRepository {
 
     private static final Logger LOG = LoggerFactory.getLogger(AuthenticationFileRepository.class);
